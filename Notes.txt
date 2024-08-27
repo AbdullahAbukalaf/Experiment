@@ -1,0 +1,47 @@
+
+rb = GetComponent<Rigidbody>();
+if (rb == null){
+    Debug.Log("No Rigidbody found for this object");
+}
+
+
+if (Input.GetKey(KeyCode.W))
+        {
+            // check if the key works
+            Debug.Log("Checking...");
+            // Move the object forward
+            rb.MovePosition(transform.position + transform.up * speed * Time.deltaTime);
+            Debug.Log("W key is pressed.");
+        }
+        // Check if the "R" key is pressed
+        if (Input.GetKey(KeyCode.R))
+        {
+            // check if the key works
+            Debug.Log("Checking...");
+            // Rotate the object around its Y-axis
+            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        }
+        // Check if the "S" key is pressed
+        if (Input.GetKey(KeyCode.S)) {
+            // check if the key works
+            Debug.Log("Checking down...");
+            rb.MovePosition(transform.position + Vector3.down * speed * Time.deltaTime);
+        }
+        // Check if the "D" key is pressed
+        if (Input.GetKey(KeyCode.D)) {
+            // check if the key works
+            Debug.Log("Checking down...");
+            rb.MovePosition(transform.position + Vector3.right * speed * Time.deltaTime);
+        }
+        // Check if the "A" key is pressed
+        if (Input.GetKey(KeyCode.A)) {
+            // check if the key works
+            Debug.Log("Checking down...");
+            rb.MovePosition(transform.position + Vector3.left * speed * Time.deltaTime);
+        }
+        // Check if the "Space" key is pressed
+        if (Input.GetKey(KeyCode.Space)) {
+            // check if the key works
+            Debug.Log("Checking jump...");
+            rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        }
