@@ -5,9 +5,9 @@ using UnityEngine;
 public class Driver : MonoBehaviour
 {
     // speed at which the object moves
-    [SerializeField] float moveSpeed = 18f;
+    [SerializeField] float moveSpeed = 32f;
     // rotation speed at which the object rotates
-    [SerializeField] float rotateSpeed = 300f;
+    [SerializeField] float rotateSpeed = 290f;
 
     // Start is called before the first frame update
     void Start()
