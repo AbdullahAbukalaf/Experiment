@@ -3,3 +3,26 @@
 * components in Unity have 2 different name for the component (not all of them):
 the one with 2D at the end of it is where we are working with a three dimensional object and the other one is when work with sprites.
 ********************************
+
+Update
+Timing: The Update method is called once per frame. It is the most commonly used method in Unity for handling any 
+kind of game logic that needs to be checked or updated regularly.
+Use Case: Update is typically used for most general game logic, including:
+Reading player input (e.g., checking if a key is pressed)
+Moving characters or objects (e.g., applying movement based on input)
+Running timers or countdowns
+Checking conditions (e.g., health checks, status updates)
+Execution Order: All Update methods across all scripts are called before any LateUpdate methods are called in 
+the same frame.
+
+LateUpdate
+Timing: The LateUpdate method is also called once per frame, but it is called after all Update methods have
+ been called. This makes it ideal for tasks that need to occur after the regular update cycle has completed.
+Use Case: LateUpdate is generally used for:
+Following or positioning cameras (e.g., making sure the camera updates its position after the player has moved)
+Final adjustments to object states (e.g., correcting positions or applying final transformations)
+Performing tasks that depend on other objects having updated first
+Execution Order: All LateUpdate methods are called after all Update methods. If you need to ensure that a piece
+of logic is applied after other updates, LateUpdate is the place to do it.
+
+********************************

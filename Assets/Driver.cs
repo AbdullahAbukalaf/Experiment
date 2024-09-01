@@ -17,6 +17,11 @@ public class Driver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKey(KeyCode.N)){
+            moveSpeed = 70f;
+        }else{
+            moveSpeed = 32f;
+        }
         float steerSpeed = Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime;
         float moveAmount = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         transform.Rotate(0, 0, -steerSpeed);
