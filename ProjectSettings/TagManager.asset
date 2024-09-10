@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Customer
   - Package
+  - SlowDown
+  - Boost
   layers:
   - Default
   - TransparentFX

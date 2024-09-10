@@ -62,10 +62,10 @@
     <Analyzer Include="C:\Users\Abdullah Azzam\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Driver.cs" />
-    <Compile Include="Assets\Delivery.cs" />
-    <Compile Include="Assets\PrintToConsole.cs" />
-    <Compile Include="Assets\FollowCamera.cs" />
+    <Compile Include="Assets\Scripts\Driver.cs" />
+    <Compile Include="Assets\Scripts\Delivery.cs" />
+    <Compile Include="Assets\Scripts\PrintToConsole.cs" />
+    <Compile Include="Assets\Scripts\FollowCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
